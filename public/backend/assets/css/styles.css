@@ -1,0 +1,13 @@
+.message {
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
+
+.error {
+    color: #FF3366;
+}
+
+.success {
+    color: #28a745;
+}

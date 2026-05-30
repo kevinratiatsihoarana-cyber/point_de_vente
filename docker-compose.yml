@@ -1,0 +1,9 @@
+version: '3'
+
+services: 
+ nginx: 
+   image: nginix:1.22-alpine
+   ports:
+    - "8080:80"
+   volumes:
+    - ./nginix.conf:etc/nginix/nginix.conf
