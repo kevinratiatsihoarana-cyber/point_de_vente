@@ -27,15 +27,15 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach($payement as $single)
+                      @foreach($contents as $single)
                       <tr>
-                        <td>{{$single->get_client->nom}} </td>
-                        <td>{{$single->order_date}}</td>
-                        <td>{{$single->total_produit}}</td>
-                        <td>{{$single->total}}</td>
-                        <td><span class="badge bg-primary">{{$single->status}}<span></td>
+                        <td>{{$single->name}} </td>
+                        <td>{{ date('d-m-Y') }}</td>
+                        <td>{{$single->qty}}</td>
+                        <td>{{Cart::total()}}</td>
+                        <td><span class="badge bg-primary">payé<span></td>
                         <td>
-                          <a  href="{{url('payements/voir_produit/'.$single->id)}}" class="btn btn-primary me-2"  >voir</a>
+                          <a  href="/" class="btn btn-primary me-2"  >voir</a>
                         </td>
                       </tr>
                       @endforeach

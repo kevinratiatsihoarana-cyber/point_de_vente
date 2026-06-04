@@ -84,7 +84,6 @@
                        
                       </div>
                       <a href="{{url('/register')}}" class="d-block mt-3 text-muted">S'inscrire</a>
-                      <a href="{{url('auth/google')}}">register with google</a>
                     </form>
                   </div>
                 </div>
