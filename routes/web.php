@@ -84,7 +84,8 @@ Route::post('/facture',[FactureController::class,'facture'])->name('facture');
 });
 Route::group(['prefix' => 'payements'],function(){
     Route::get('/payement',[PayementController::class,'payement']);
-    Route::get('/voir_produit/{id}',[PayementController::class,'voir_produit']);
+    Route::get('/voir_produit/{id}',[PayementController::class,'voir_produit'])->name('voir_produit');
+    
 
     });
     Route::group(['prefix' => 'liste'],function(){

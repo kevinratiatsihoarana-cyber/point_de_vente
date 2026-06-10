@@ -35,7 +35,7 @@
                         <td>{{Cart::total()}}</td>
                         <td><span class="badge bg-primary">payé<span></td>
                         <td>
-                          <a  href="/" class="btn btn-primary me-2"  >voir</a>
+                          <a  href="{{url('/voir_produit/'.$single->id)}}" class="btn btn-primary me-2"  >voir</a>
                         </td>
                       </tr>
                       @endforeach

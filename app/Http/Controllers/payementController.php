@@ -15,6 +15,9 @@ class payementController extends Controller
     
         return view('/payements/payement',compact('client','contents'));
     }
+    public function voir_produit(){
+        return view('/payements/voir_produit');
+    }
    
 
 }
